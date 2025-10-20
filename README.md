@@ -9,7 +9,7 @@
 |:------------------:|:--------------:|:----------------:|
 | ![Connection to Motherboard](images/Connection.jpg) | ![Circuit Board](images/Circuit.jpg) | ![System Flowchart](images/Flowchart.png) |
 
-| Display – Metrics | Display – RAM & HDD | Blynk App |
+| Display – CPU Usage and Temperature | Display – RAM & HDD Usage | Blynk App |
 |:------------------:|:-------------------:|:----------:|
 | ![Metrics Display – CPU, Temp, Fan](images/Metrics.jpg) | ![RAM & HDD Display](images/RAM%20and%20HDD.jpg) | ![Blynk App Screenshot](images/App.jpg) |
 
