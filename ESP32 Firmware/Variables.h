@@ -1,9 +1,9 @@
 #include <Icons.h>
 
 // Blynk Credentials
-#define BLYNK_TEMPLATE_ID "Your-Template-ID"
+#define BLYNK_TEMPLATE_ID "TMPL30EWWVmP4"
 #define BLYNK_TEMPLATE_NAME "HomeLab Power Controller"
-#define BLYNK_AUTH_TOKEN "Your-Blynk-Token"
+#define BLYNK_AUTH_TOKEN "2IdLeScR90WXnhR3pJvbijrNG43nRL8t"
 
 // Physical Pin Definitions
 #define Reboot 2
@@ -18,15 +18,15 @@
 #define PANEL_CHAIN 1
 
 // Network Credentials
-char ssid[] = "YourSSID";
-char pass[] = "YourPassword";
-char MQTTServer[] = "Static-IP-of-the-server";
+char ssid[] = "506F726E2034";
+char pass[] = "12connectme34";
+char MQTTServer[] = "10.1.1.3";
 char MQTTTopic[] = "Metrics";
-int MQTTPort = 11111; // Change this to your MQTT Port
+int MQTTPort = 11111;
 byte bssid[] = { 0x6A, 0x42, 0xA1, 0xAD, 0x53, 0xE8 };
 
-IPAddress local_IP(10, 1, 1, 4); // Change this to set local IP of the ESP
-IPAddress gateway(10, 1, 1, 1); // Change this to your Gateway Address
+IPAddress local_IP(10, 1, 1, 4);
+IPAddress gateway(10, 1, 1, 1);
 IPAddress subnet(255, 255, 255, 0);
 IPAddress dns(1, 1, 1, 1);
 
