@@ -94,10 +94,20 @@ BLYNK_WRITE(V8) {
       }
     }
     FanAmplitude = Input.substring(4).toInt();
-    if (FanAmplitude > 100) { FanAmplitude = 100; }
-    else if (FanAmplitude < 0) { FanAmplitude = 0; }
+    if (FanAmplitude > 100) {
+      FanAmplitude = 100;
+    } else if (FanAmplitude < 0) {
+      FanAmplitude = 0;
+    }
     Blynk.virtualWrite(V8, "Fan Speed set to " + String(FanAmplitude) + "%");
     ledcWrite(Fan, map(FanAmplitude, 0, 100, 0, 4095));
+  } else if (Input == "BOOT") {
+    SendPowerSignal(500);
+  } else if (Input.substring(0, 8) == "DISPLAY ") {
+    DisplayFadeOut();
+    DisplayBrightness =  Input.substring(8).toInt());
+    DisplayFadeIn();
+    Blynk.virtualWrite(V8, "Diplay brightness set to " + Input.substring(8));
   } else {
     Blynk.virtualWrite(V8, "Invalid Input");
   }
