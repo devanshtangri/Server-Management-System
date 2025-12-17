@@ -7,8 +7,8 @@
 #include <ArduinoJson.h>
 #include <Variables.h>
 #include <Prototypes.h>
-#include <BlynkIntegration.h>
 #include <ESP32-HUB75-MatrixPanel-I2S-DMA.h>
+#include <BlynkIntegration.h>
 
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "time.windows.com", 19800, 60000);
